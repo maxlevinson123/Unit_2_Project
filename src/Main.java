@@ -1,7 +1,9 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int a = Game.rollDice;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Welcome to the Awesome Game!");
+        System.out.print("How many players would you like to play with?: ");
+        int players = scan.nextInt();
     }
 }
