@@ -12,6 +12,12 @@ public class Main {
         int score = 0;
         while (score < 100) {
             score+= Game.rollDice();
+            if (score % 10 == 0) {
+                Game.askQuestion();
+            }
+            if (score % 7 == 0) {
+                score -= 5;
+            }
 
         }
 
