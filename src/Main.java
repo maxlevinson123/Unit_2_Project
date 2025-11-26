@@ -8,13 +8,15 @@ public class Main {
 
 
         String answer = "";
+        int a = 0;
         int score = 0;
         while (score < 100) {
             score += 4; // Game.rollDice();
             if ((score == 4) || (score == 32) || (score == 58)) {
-                System.out.println("What is 4 x 6?: ");
+                a = 1;
+                System.out.println(Game.askQuestion(a));
                 answer = scan.nextLine();
-                if (answer.equals("24")) {
+                if (answer.equals(Game.getAnswer(a))) {
                     System.out.println("That's correct you get 5 points! " + score + " + 5:");
                     score += 5;
 
@@ -22,14 +24,13 @@ public class Main {
                     System.out.println("That's wrong! No points for you!");
                 }
                 if ((score == 4) || (score == 32) || (score == 58)) {
-                    int a = 1;
+                    a = 1;
                     Game.askQuestion(a);
                     answer = scan.nextLine();
                     if (answer.equals("24")) {
                         System.out.println("That's correct you get 5 points! " + score + " + 5:");
                         score += 5;
-                        System.out.print(score + 5);
-
+                        System.out.println("Score: " + score + 5);
                     } else {
                         System.out.println("That's wrong! No points for you!");
                     }
