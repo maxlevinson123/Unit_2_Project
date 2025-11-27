@@ -23,7 +23,7 @@ public class Main {
         int zone = 0;
         int lava = 0;
         while (zone < 100) {
-            zone += 8; // Game.rollDice();
+            zone += Game.rollDice();
             lava += lavaDifficulty;
             if ((zone == 4) || (zone == 32) || (zone == 58)) {
                 a = 1;
@@ -54,8 +54,6 @@ public class Main {
                         zone -= 5;
                     }
                     System.out.println(zone);
-
-
                 }
 
             }

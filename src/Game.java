@@ -10,6 +10,9 @@ public class Game {
         if (a == 2){
             return "The three primary colors are blue, yellow, and ______: (put answer in lowercase";
         }
+        if (a == 3) {
+            return "what is the name of your mother?";
+        }
         return "";
     }
 
@@ -21,7 +24,7 @@ public class Game {
             return "red";
         }
         if (a == 3) {
-
+            return "hehehaw";
         }
         return "";
     }
