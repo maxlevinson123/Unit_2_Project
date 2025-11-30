@@ -11,7 +11,16 @@ public class Game {
             return "The three primary colors are blue, yellow, and ______: (put answer in lowercase";
         }
         if (a == 3) {
-            return "what is the name of your mother?";
+            return "What is the capital of France?";
+        }
+        if (a == 4) {
+            return "How many continents are there?";
+        }
+        if (a == 5) {
+            return "What is the largest planet in our solar system?";
+        }
+        if (a == 6) {
+            return "What is 9 squared?";
         }
         return "";
     }
@@ -24,7 +33,16 @@ public class Game {
             return "red";
         }
         if (a == 3) {
-            return "hehehaw";
+            return "paris";
+        }
+        if (a == 4) {
+            return "7";
+        }
+        if (a == 5) {
+            return "jupiter";
+        }
+        if (a == 6) {
+            return "81";
         }
         return "";
     }
